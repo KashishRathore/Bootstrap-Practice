@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .box {
+            background-color: darkgrey;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .border-box {
+            margin: 30px;
+            padding: 40px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .border-boxes h2 {
+            margin: 20px;
+        }
+
+        h2 {
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: darkslategrey;
+            color: antiquewhite;
+            border-radius: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body class="container">
+
+    <div class="container">
+        <h2>1.Container</h2>
+        <p>Containers are the most basic layout element in Bootstrap and are required when using our default grid
+            system. Containers are used to contain, pad, and (sometimes) center the content within them. While
+            containers can be nested, most layouts do not require a nested container.</p>
+        <p><b>Use class name as Container</b></p>
+        <p>Bootstrap comes with three different containers:<br>
+
+            .container, which sets a max-width at each responsive breakpoint<br>
+            .container-{breakpoint}, which is width: 100% until the specified breakpoint<br>
+            .container-fluid, which is width: 100% at all breakpoints </p><br>
+        <div class="container">100% wide until small breakpoint at less than 576px</div>
+        <div class="container-sm">100% wide until small breakpoint ≥576px</div>
+        <div class="container-md">100% wide until medium breakpoint ≥768px</div>
+        <div class="container-lg">100% wide until large breakpoint ≥992px</div>
+        <div class="container-xl">100% wide until extra large breakpoint ≥1200px</div>
+        <div class="container-xxl">100% wide until extra extra large breakpoint ≥1400px</div>
+        <div class="container-fluid">fluid</div>
+    </div>
+
+
+
+
+    <h2>2.Navbar</h2>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <h2>3.Heading</h2>
+    <h3>a.Use as class</h3>
+    <p class="h1">h1. Bootstrap heading</p>
+    <p class="h2">h2. Bootstrap heading</p>
+    <p class="h3">h3. Bootstrap heading</p>
+    <p class="h4">h4. Bootstrap heading</p>
+    <p class="h5">h5. Bootstrap heading</p>
+    <p class="h6">h6. Bootstrap heading</p>
+
+    <h3>a.Use display</h3>
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+    <h1 class="display-5">Display 5</h1>
+    <h1 class="display-6">Display 6</h1>
+
+
+
+
+    <h2>4.Inline Text Element</h2>
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+    <p><u>This line of text will render as underlined.</u></p>
+    <p><small>This line of text is meant to be treated as fine print.</small></p>
+    <p><strong>This line rendered as bold text.</strong></p>
+    <p><em>This line rendered as italicized text.</em></p>
+
+    we can also use mark as .mark,small as .small,u as .text-decoration-underline,s as .text-decoration-line-through
+
+
+
+
+    <h2>5.Lead</h2>
+    <p class="lead">
+        This is a lead paragraph. It stands out from regular paragraphs.
+    </p>
+
+
+
+
+    <h2>6.Abbreviations</h2>
+    <p><abbr title="attribute">attr</abbr></p>
+    <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p> <!--for small dots-->
+
+
+
+
+    <h2>7.Blockquotes and figure</h2>
+    <figure>
+        <blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+    </figure>
+
+
+
+
+    <h2>8.Alignment</h2>
+    <p class="text-center">alignment of this para is center.</p>
+    <p class="text-end">alignment of this para is right.</p>
+    <p class="text-start">alignment of this para is left.</p>
+
+
+
+
+    <h2>9.Lists</h2>
+    <h3>a.unstyle</h3>
+    <ul class="list-unstyled">
+        <li>This is a list.</li>
+        <li>It appears completely unstyled.</li>
+        <li>Structurally, it's still a list.</li>
+        <li>However, this style only applies to immediate child elements.</li>
+        <li>Nested lists:
+            <ul>
+                <li>are unaffected by this style</li>
+                <li>will still show a bullet</li>
+                <li>and have appropriate left margin</li>
+            </ul>
+        </li>
+        <li>This may still come in handy in some situations.</li>
+    </ul>
+    <h3>b.Inline</h3>
+    <ul class="list-inline">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+    </ul>
+    <h3>c.List-group</h3>
+    <ul class="list-group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+    </ul>
+
+
+
+
+    <h2>10.Grid System</h2>
+    <h3>a.Example</h3>
+    <div class="text-center">
+        <div class="row no-gutters">
+            <div class="box col-md">4</div>
+            <div class="box col-md">4</div>
+            <div class="box col-md">4</div>
+        </div>
+
+        <div class="text-center">
+            <div class="row">
+                <div class="box col-md-3 ">4</div>
+                <div class="box col-md-6">4</div>
+                <div class="box col-md-3">4</div>
+            </div>
+        </div>
+    </div>
+    <h3>b.Grid Alignment</h3>
+    <div class="text-center">
+        <div class="row">
+            <div class="box col-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium voluptatem! Expedita, maiores nostrum?</div>
+            <div class="box col-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium voluptatem! Expedita, maiores nostrum?</div>
+            <div class="box col-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium voluptatem! Expedita, maiores nostrum? Lorem ipsum dolor sit, amet
+                consecteturvoluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesenti
+                adipisicing elit. Iure odit earum, fugiat ipsum hic harum qui eos, possimus voluptatibus ad
+                aspernatur asperiores totam enim modi, omnis nemo commodi ex magnam.</div>
+            <div class="box col-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium volvoluptatibus et nuledita, maiores nostrum?</div>
+        </div>
+    </div>
+
+    <div class="text-center my-4">
+        <div class="row align-items-end">
+            <div class="box col-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium voluptatem! Expedita, maiores nostrum?</div>
+            <div class="box col-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium voluptatem! Expedita, maiores nostrum?</div>
+            <div class="box col-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium voluptatem! Expedita, maiores nostrum? Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Iure odit earum, fugiat ipsum hic harum qui eos, possimus voluptatibus ad
+                aspernatur asperiores totam enim modi, omnis nemo commodi ex magnam.</div>
+            <div class="box col-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium voluptatem! Expedita, maiores nostrum?</div>
+        </div>
+    </div>
+
+    <div class="text-center my-4">
+        <div class="row align-items-center">
+            <div class="box col-md align-self-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium voluptatem! Expedita, maiores nostrum?</div>
+            <div class="box col-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium voluptatem! Expedita, maiores nostrum?</div>
+            <div class="box col-md ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat ab quibusdam suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium voluptatem! Expedita, maiores nostrum? Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Iure odit earum, fugiat ipsum hic harum qui eos, possimus voluptatibus ad
+                aspernatur asperiores totam enim modi, omnis nemo commodi ex magnam.</div>
+            <div class="box col-md align-self-end">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Architecto aliquam
+                labore, accusamus fugiat ab quib, dolor sit amet consectetur adipisicing elit. Architecto aliquam
+                labore, accusamus fugiat abm suscipit voluptatibus et nulla sunt. Incidunt odio ex a, quia
+                praesentium volvoluptatibus et nullaiores nostrum?</div>
+        </div>
+    </div>
+
+    <h3>c.Horizontal Alignment</h3>
+    <div class="text-center my-4">
+        <div class="row justify-content-center">
+            <div class="box col-md-4">4</div>
+            <div class="box col-md-4">4</div>
+        </div>
+
+        <div class="text-center my-4">
+            <div class="row justify-content-start">
+                <div class="box col-md-4">4</div>
+                <div class="box col-md-4">4</div>
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <div class="row justify-content-end">
+                <div class="box col-md-4">4</div>
+                <div class="box col-md-4">4</div>
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <div class="row justify-content-between">
+                <div class="box col-md-4">4</div>
+                <div class="box col-md-4">4</div>
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <div class="row justify-content-sm-around">
+                <div class="box col-md-4">4</div>
+                <div class="box col-md-4">4</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h2>11.Images</h2>
+    <h3>Image-Fluid</h3>
+    <img src="https://images.unsplash.com/photo-1684460501462-d676a5b9b997?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+        alt="image" class="img-fluid">
+
+    <h3>Image-Thumbnail</h3>
+    <img src="https://images.unsplash.com/photo-1684460501462-d676a5b9b997?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+        alt="image" class="img-thumbnail">
+
+
+
+
+    <h2>12.Figures</h2>
+    <figure class="figure">
+        <img src="https://images.unsplash.com/photo-1684423920844-e730cb506fd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
+            class="figure-img">
+        <figcaption class="figure-caption">-A Beautiful Image</figcaption>
+    </figure>
+
+
+
+
+    <h2>13.Forms</h2>
+    <form action="nowhere">
+        <div class="form-group">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control form-control-lg">
+            <div class="form-text">We'll never share your email with anyone else</div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="textarea" class="form-label">Leave a Comment</label>
+            <textarea name="text" id="text" cols="20" rows="7" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <h5>a.File Input</h5>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Choose a File</label>
+            <input type="file" class="form-control" id="formFile">
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Choose a File</label>
+            <input type="file" class="form-control" id="formFile" multiple>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Choose a File</label>
+            <input type="file" class="form-control" id="formFile" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Choose a File</label>
+            <input type="file" class="form-control form-control-lg" id="formFile">
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Choose a File</label>
+            <input type="file" class="form-control form-control-sm" id="formFile" multiple>
+        </div>
+
+        <h3>b.Color Picker</h3>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Color Picker</label>
+            <input type="color" class="form-control form-control-sm" id="formFile" multiple>
+        </div>
+
+        <h3>c.Datalists</h3>
+        <label for="datalist" class="form-label">Datalist example</label>
+        <input type="text" class="form-control" list="datalistoptions">
+        <datalist id="datalistoptions">
+            <option value="India"></option>
+            <option value="America"></option>
+            <option value="China"></option>
+            <option value="Russia"></option>
+            <option value="Indonesia"></option>
+        </datalist>
+
+        <h3>d.Select</h3>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+
+        <h3>e.Checks</h3>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input">
+            <label for="checkDefault" class="form-check-label">Box1</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input">
+            <label for="checkDefault" class="form-check-label">Box2</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input">
+            <label for="checkDefault" class="form-check-label">Box3</label>
+        </div>
+
+        <h3>f.Radios</h3>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="radiobox">
+            <label for="checkDefault" class="form-check-label">Box1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="radiobox">
+            <label for="checkDefault" class="form-check-label">Box2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="radiobox">
+            <label for="checkDefault" class="form-check-label">Box3</label>
+        </div>
+
+        <h3>g.Switch</h3>
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input">
+            <label for="flexSwitchCheckDefault" class="form-check-label">Box 1</label>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input">
+            <label for="flexSwitchCheckDefault" class="form-check-label">Box 2</label>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input">
+            <label for="flexSwitchCheckDefault" class="form-check-label">Box 3</label>
+        </div>
+
+        <h3>h.Range</h3>
+        <label for="" class="form-label"></label>
+        <input type="range" class="form-range">
+
+        <h3>i.Input Group</h3>
+        <div class="input-group">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Username">
+            <span class="input-group-text">@example.com</span>
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control">
+            <span class="input-group-text">.00</span>
+        </div>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Username">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Server">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">@</span>
+            <textarea name="text" class="form-control"></textarea>
+        </div>
+
+        <h3>j.Floating Labels</h3>
+        <div class="form-floating ">
+            <input type="text" class="form-control" placeholder="email">
+            <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating ">
+            <input type="password" class="form-control" placeholder="password">
+            <label for="floatingPassword">Password</label>
+        </div>
+    </form>
+
+
+
+
+    <h2>14.Alerts</h2>
+    <h3>a.example</h3>
+    <div class="alert alert-primary"> A simple primary alert-check it out!</div>
+    <div class="alert alert-secondary"> A simple primary alert-check it out!</div>
+    <div class="alert alert-success"> A simple primary alert-check it out!</div>
+    <div class="alert alert-danger"> A simple primary alert-check it out!</div>
+    <div class="alert alert-warning"> A simple primary alert-check it out!</div>
+    <div class="alert alert-info"> A simple primary alert-check it out!</div>
+    <div class="alert alert-light"> A simple primary alert-check it out!</div>
+    <div class="alert alert-dark"> A simple primary alert-check it out!</div>
+
+    <h3>b.alert-link</h3>
+    <div class="alert alert-primary"> A simple primary <a href="#" class="alert-link"> alert-check</a> it out!</div>
+    <div class="alert alert-secondary"> A simple primary <a href="#" class="alert-link"> alert-check</a> it out!</div>
+    <div class="alert alert-success"> A simple primary <a href="#" class="alert-link"> alert-check</a> it out!</div>
+    <div class="alert alert-danger"> A simple primary <a href="#" class="alert-link"> alert-check</a> it out!</div>
+    <div class="alert alert-warning"> A simple primary <a href="#" class="alert-link"> alert-check</a> it out!</div>
+    <div class="alert alert-info"> A simple primary <a href="#" class="alert-link"> alert-check</a> it out!</div>
+    <div class="alert alert-light"> A simple primary <a href="#" class="alert-link"> alert-check</a> it out!</div>
+    <div class="alert alert-dark"> A simple primary <a href="#" class="alert-link"> alert-check</a> it out!</div>
+
+    <h3>c.alert-heading</h3>
+    <div class="alert alert-success">
+        <h4 class="alert-heading">Well Done!</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum animi autem ipsum dolorem rem ipsa iste
+            nostrum. Unde eos soluta, dolores ducimus mollitia sed, enim, harum quam itaque suscipit dolore.
+            Vel illum nihil cumque, consequuntur in molestiae. Laboriosam alias nostrum obcaecati dicta accusamus ullam
+            repellat quam eius aliquam, odit id excepturi omnis, delectus magni molestias totam quae exercitationem
+            nesciunt voluptatibus?
+            Repellat nulla quaerat similique, ratione molestias inventore neque aut ea debitis, delectus qui ut. Quos
+            est repellat illo totam dolores aperiam!
+        </p>
+    </div>
+
+    <h3>d.Dismissing</h3>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+
+
+    <h2>15.Badges</h2>
+    <h3>a.Heading</h3>
+    <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+    <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+    <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+    <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+    <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+
+    <h3>b.Buttons</h3>
+    <button class="btn btn-primary">
+        Notifications <span class="badge bg-danger">4</span>
+    </button>
+
+    <h3>c.Background-Color</h3>
+    <span class="badge text-bg-primary">Primary</span>
+    <span class="badge text-bg-secondary">Secondary</span>
+    <span class="badge text-bg-success">Success</span>
+    <span class="badge text-bg-danger">Danger</span>
+    <span class="badge text-bg-warning">Warning</span>
+    <span class="badge text-bg-info">Info</span>
+    <span class="badge text-bg-light">Light</span>
+    <span class="badge text-bg-dark">Dark</span>
+
+    <h3>d.rounded-pill</h3>
+    <span class="badge rounded-pill text-bg-primary">Primary</span>
+    <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+    <span class="badge rounded-pill text-bg-success">Success</span>
+    <span class="badge rounded-pill text-bg-danger">Danger</span>
+    <span class="badge rounded-pill text-bg-warning">Warning</span>
+    <span class="badge rounded-pill text-bg-info">Info</span>
+    <span class="badge rounded-pill text-bg-light">Light</span>
+    <span class="badge rounded-pill text-bg-dark">Dark</span>
+
+
+
+    <h2>16.Buttons</h2>
+    <p>Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes,
+        states, and more.</p>
+
+    <h3>a.Variants</h3>
+    <button type="button" class=" btn">Base class</button>
+    <button type="button" class=" btn btn-primary">Base class</button>
+    <button type="button" class=" btn btn-secondary">Base class</button>
+    <button type="button" class=" btn btn-success">Base class</button>
+    <button type="button" class=" btn btn-danger">Base class</button>
+    <button type="button" class=" btn btn-warning">Base class</button>
+    <button type="button" class=" btn btn-info">Base class</button>
+    <button type="button" class=" btn btn-light">Base class</button>
+    <button type="button" class=" btn btn-dark">Base class</button>
+
+    <h3>b.Buttons Tag</h3>
+    <a href="#" class="my-1 btn btn-prmary">link</a><br>
+    <button type="my-1 button" class=" my-1 btn">Base class</button>
+    <input type="my-1 button" class="btn btn-primary" value="input">
+    <input class="my-1 btn btn-primary" type="submit" value="Submit">
+    <input class="my-1 btn btn-primary" type="reset" value="Reset">
+
+    <h3>c.Button Outlines</h3>
+    <button class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+
+    <h3>d.Sizes</h3>
+    <h6>i.large button</h6>
+    <button class="btn btn-primary btn-lg">large button</button>
+    <button class="btn btn-outline-danger btn-lg">large button</button>
+    <h6>ii.small button</h6>
+    <button class="btn btn-primary btn-sm">small button</button>
+    <button class="btn btn-outline-danger btn-sm">small button</button>
+
+    <h3>e.Disabled Button</h3>
+    <button type="button" class=" btn btn-primary" disabled>Base class</button>
+    <button type="button" class=" btn btn-outline-primary" disabled>Base class</button>
+
+    <h3>e.Activate Button</h3>
+    <button type="button" class=" btn btn-primary active">Base class</button>
+    <button type="button" class=" btn btn-outline-primary active" disabled>Base class</button>
+
+    <h3>f.Blocked button</h3>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+
+
+
+
+    <h2>17.Button Group</h2>
+    <h3>a.example</h3>
+    <div class="btn-group">
+        <button class="btn btn-secondary active">Left</button>
+        <button class="btn btn-secondary">Center</button>
+        <button class="btn btn-secondary">Right</button>
+    </div>
+
+    <h3>b.Outlined Style</h3>
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <button type="button" class="btn btn-outline-primary">Left</button>
+        <button type="button" class="btn btn-outline-primary">Middle</button>
+        <button type="button" class="btn btn-outline-primary">Right</button>
+    </div>
+
+    <h3>c.Button Toolbar</h3>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary">4</button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-secondary">5</button>
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-secondary">7</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-info">8</button>
+        </div>
+    </div>
+
+    <h3>d.Nesting</h3>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-primary">1</button>
+        <button type="button" class="btn btn-primary">2</button>
+
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>e.Vertical group</h3>
+    <div class="btn-group-vertical">
+        <button class="btn btn-secondary">Left</button>
+        <button class="btn btn-secondary">Center</button>
+        <button class="btn btn-secondary">Right</button>
+    </div>
+
+
+
+
+    <h2>18.Card</h2>
+    <div class="row">
+        <div class="card col-5-lg" style="width:18rem;">
+            <div class="ratio ratio-1x1">
+                <img src="https://images.unsplash.com/photo-1682313809070-e04ab10e7a8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                    alt="watch">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Black Nixon Watch</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam laboriosam qui
+                    excepturi necessitatibus incidunt itaque, soluta sapiente ut inventore similique quaerat rem facere
+                    debitis tenetur obcaecati, rerum iure officia quis.</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">1</li>
+                    <li class="list-group-item">2</li>
+                    <li class="list-group-item">3</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="card col-5-lg" style="width:18rem;">
+            <div class="ratio ratio-1x1">
+                <img src="https://images.unsplash.com/photo-1682313809070-e04ab10e7a8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                    alt="watch">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Black Nixon Watch</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam laboriosam qui
+                    excepturi necessitatibus incidunt itaque, soluta sapiente ut inventore similique quaerat rem facere
+                    debitis tenetur obcaecati, rerum iure officia quis.</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">1</li>
+                    <li class="list-group-item">2</li>
+                    <li class="list-group-item">3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card col-5-md" style="width:18rem;">
+            <div class="ratio ratio-1x1">
+                <img src="https://images.unsplash.com/photo-1682313809070-e04ab10e7a8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                    alt="watch">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Black Nixon Watch</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam laboriosam qui
+                    excepturi necessitatibus incidunt itaque, soluta sapiente ut inventore similique quaerat rem facere
+                    debitis tenetur obcaecati, rerum iure officia quis.</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">1</li>
+                    <li class="list-group-item">2</li>
+                    <li class="list-group-item">3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h2>19.Carousel</h2>
+    <div class="carousel slide carousel-fade" id="carouselExample" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://images.unsplash.com/photo-1681601988039-434de125ca06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                    class="d-block w-100" alt="img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://images.unsplash.com/photo-1682208703156-1418dfefd5ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                    class="d-block w-100 " alt="img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://media.istockphoto.com/id/1201834209/photo/flat-lay-photography-equipment.webp?s=170667a&w=0&k=20&c=KjgIgZdTGmCeY-YVuzGHOdcumAIxI51Jb4MkO1o5VN8="
+                    class="d-block w-100 " alt="img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselexample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselexample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    <h2>20.Pagination</h2>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <h2>21.Popover</h2>
+    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="top" data-bs-content="Top popover">
+        Popover on top
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="right" data-bs-content="Right popover">
+        Popover on right
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="bottom" data-bs-content="Bottom popover">
+        Popover on bottom
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="left" data-bs-content="Left popover">
+        Popover on left
+    </button>
+
+
+
+
+
+    <h2>22.Progress bar</h2>
+    <div class="progress my-3" role="progressbar" aria-label="sucess example" aria-valuenow="10" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-success" style="width:10%">10%</div>
+    </div>
+    <div class="progress my-3" role="progressbar" aria-label="info example" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-info" style="width:25%">25%</div>
+    </div>
+    <div class="progress my-3" role="progressbar" aria-label="warning example" aria-valuenow="50" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-warning" style="width:50%">50%</div>
+    </div>
+    <div class="progress my-3" role="progressbar" aria-label="danger example" aria-valuenow="75" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-danger" style="width:75%">75%</div>
+    </div>
+    <div class="progress my-3" role="progressbar" aria-label="dark example" aria-valuenow="100" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-dark" style="width:100%">100%</div>
+    </div>
+
+    <h3>a.For multiple bar</h3>
+    <div class="progress-stacked">
+        <div class="progress" role="progressbar" aria-label="segment one" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100" style="width:20%">
+            <div class="progress-bar bg-success">20%</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="segment two" aria-valuenow="10" aria-valuemin="0"
+            aria-valuemax="100" style="width:10%">
+            <div class="progress-bar bg-danger">10%</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="segment three" aria-valuenow="30" aria-valuemin="0"
+            aria-valuemax="100" style="width:30%">
+            <div class="progress-bar bg-warning">30%</div>
+        </div>
+    </div>
+
+    <h3>b.Default Striped</h3>
+    <div class="progress my-3" role="progressbar" aria-label="danger example" aria-valuenow="100" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-danger progress-bar-striped" style="width:50%">50%</div>
+    </div>
+
+    <h3>c.Animated Striped</h3>
+    <div class="progress my-3" role="progressbar" aria-label="sucess example" aria-valuenow="10" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:10%">10%</div>
+    </div>
+    <div class="progress my-3" role="progressbar" aria-label="info example" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:25%">25%</div>
+    </div>
+    <div class="progress my-3" role="progressbar" aria-label="warning example" aria-valuenow="50" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:50%">50%</div>
+    </div>
+    <div class="progress my-3" role="progressbar" aria-label="danger example" aria-valuenow="75" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:75%">75%</div>
+    </div>
+    <div class="progress my-3" role="progressbar" aria-label="dark example" aria-valuenow="100" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:100%">100%</div>
+    </div>
+
+
+
+
+    <h2>23.Spinner</h2>
+    <h3>a.Border Spinner</h3>
+    <div class="spinner-border text-primary">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-border text-secondary">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-border text-success">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-border text-danger">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-border text-warning">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-border text-info">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-border text-light">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-border text-dark">
+        <div class="visually-hidden">Loading</div>
+    </div>
+
+    <h3>b.Growing Spinner</h3>
+    <div class="spinner-grow text-primary">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-grow text-secondary">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-grow text-success">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-grow text-danger">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-grow text-warning">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-grow text-info">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-grow text-light">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-grow text-dark">
+        <div class="visually-hidden">Loading</div>
+    </div>
+
+    <h3>c.size</h3>
+    <h4>i.Small</h4>
+    <div class="spinner-border spinner-border-sm text-dark">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-grow spinner-grow-sm text-dark">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <h6>ii.Large</h6>
+    <div class="spinner-border spinner-border-lg text-dark">
+        <div class="visually-hidden">Loading</div>
+    </div>
+    <div class="spinner-grow spinner-grow-lg text-dark">
+        <div class="visually-hidden">Loading</div>
+    </div>
+
+    <h3>d.Buttons</h3>
+    <button class="btn btn-primary">
+        <span class="spinner-border text-light">
+            <span class="visually-hidden">Loading</span>
+        </span>
+    </button>
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm text-light"></span>
+        Loading...
+    </button>
+
+    <button class="btn btn-primary">
+        <span class="spinner-grow text-light">
+            <span class="visually-hidden">Loading</span>
+        </span>
+    </button>
+    <button class="btn btn-primary">
+        <span class="spinner-grow spinner-grow-sm text-light"></span>
+        Loading...
+    </button>
+
+
+
+
+    <h2>24.Colors</h2>
+    <p class="text-primary">.text-primary</p>
+    <p class="text-primary-emphasis">.text-primary-emphasis</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-secondary-emphasis">.text-secondary-emphasis</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-success-emphasis">.text-success-emphasis</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-danger-emphasis">.text-danger-emphasis</p>
+    <p class="text-warning bg-dark">.text-warning</p>
+    <p class="text-warning-emphasis">.text-warning-emphasis</p>
+    <p class="text-info bg-dark">.text-info</p>
+    <p class="text-info-emphasis">.text-info-emphasis</p>
+    <p class="text-light bg-dark">.text-light</p>
+    <p class="text-light-emphasis">.text-light-emphasis</p>
+    <p class="text-dark bg-white">.text-dark</p>
+    <p class="text-dark-emphasis">.text-dark-emphasis</p>
+
+    <p class="text-body">.text-body</p>
+    <p class="text-body-emphasis">.text-body-emphasis</p>
+    <p class="text-body-secondary">.text-body-secondary</p>
+    <p class="text-body-tertiary">.text-body-tertiary</p>
+
+    <p class="text-black bg-white">.text-black</p>
+    <p class="text-white bg-dark">.text-white</p>
+    <p class="text-black-50 bg-white">.text-black-50</p>
+    <p class="text-white-50 bg-dark">.text-white-50</p>
+
+    <h3>opacity</h3>
+    <div class="text-primary">This is default primary text</div>
+    <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
+    <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
+    <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
+
+
+
+
+    <h2>25.Background</h2>
+    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+    <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">.bg-primary-subtle</div>
+    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+    <div class="p-3 mb-2 bg-secondary-subtle text-emphasis-secondary">.bg-secondary-subtle</div>
+    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+    <div class="p-3 mb-2 bg-success-subtle text-emphasis-success">.bg-success-subtle</div>
+    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+    <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger">.bg-danger-subtle</div>
+    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+    <div class="p-3 mb-2 bg-warning-subtle text-emphasis-warning">.bg-warning-subtle</div>
+    <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+    <div class="p-3 mb-2 bg-info-subtle text-emphasis-info">.bg-info-subtle</div>
+    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+    <div class="p-3 mb-2 bg-light-subtle text-emphasis-light">.bg-light-subtle</div>
+    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+    <div class="p-3 mb-2 bg-dark-subtle text-emphasis-dark">.bg-dark-subtle</div>
+    <p class="p-3 mb-2 bg-body-secondary">.bg-body-secondary</p>
+    <p class="p-3 mb-2 bg-body-tertiary">.bg-body-tertiary</p>
+
+    <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
+    <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+    <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>
+
+
+
+
+    <!--https://icons.getbootstrap.com/
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <h2>26.Icons</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+        viewBox="0 0 16 16">
+        <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+    </svg>
+
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+    <i class="fa fa-github"></i>
+    <button class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-instagram" viewBox="0 0 16 16">
+            <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </svg> Instagram</button>
+
+    <button class="btn btn-danger"><i class="fa fa-instagram"></i> Instagram</button>
+
+
+
+
+    <h2>27.Ratio</h2>
+    <div class="ratio ratio-1x1">
+        <img src="https://images.unsplash.com/photo-1684660134001-872d0443f305?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="" class="img-thumbnail">
+        <div>1x1</div>
+    </div>
+    <div class="ratio ratio-4x3">
+        <img src="https://images.unsplash.com/photo-1684660134001-872d0443f305?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="" class="img-thumbnail">
+        <div>4x3</div>
+    </div>
+    <div class="ratio ratio-16x9">
+        <img src="https://images.unsplash.com/photo-1684660134001-872d0443f305?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="" class="img-thumbnail">
+        <div>16x9</div>
+    </div>
+    <div class="ratio ratio-21x9">
+        <img src="https://images.unsplash.com/photo-1684660134001-872d0443f305?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="" class="img-thumbnail">
+        <div>21x9</div>
+    </div>
+
+
+
+
+    <h2>28.Border</h2>
+    <div class="row">
+        <div class="border-box border border-primary">border-primary</div>
+        <div class="border-box border border-primary-subtle">border-primary-subtle</div>
+        <div class="border-box border border-secondary">border-secondary</div>
+        <div class="border-box border border-secondary-subtle">border-secondary-subtle</div>
+        <div class="border-box border border-success">border-success</div>
+        <div class="border-box border border-success-subtle">border-success-subtle</div>
+        <div class="border-box border border-danger">border-danger</div>
+        <div class="border-box border border-danger-subtle">border-danger-subtle</div>
+        <div class="border-box border border-warning">border-warning</div>
+        <div class="border-box border border-warning-subtle">border-warning-subtle</div>
+        <div class="border-box border border-info">border-info</div>
+        <div class="border-box border border-info-subtle">border-info-subtle</div>
+        <div class="border-box border border-light">border-light</div>
+        <div class="border-box border border-light-subtle">border-light-subtle</div>
+        <div class="border-box border border-dark">border-dark</div>
+        <div class="border-box border border-dark-subtle">border-dark-subtle</div>
+        <div class="border-box border border-black">border-black</div>
+        <div class="border-box border border-white">border-white</div>
+    </div>
+
+    <h3>a.Opacity</h3>
+    <div class="row">
+        <div class="border-box border border-primary border-opacity"></div>
+        <div class="border-box border border-primary border-opacity-75"></div>
+        <div class="border-box border border-primary border-opacity-50"></div>
+        <div class="border-box border border-primary border-opacity-25"></div>
+        <div class="border-box border border-primary border-opacity-10"></div>
+    </div>
+
+    <h3>b.Width</h3>
+    <div class="row">
+        <div class="border-box border border-1"></div>
+        <div class="border-box border border-2"></div>
+        <div class="border-box border border-3"></div>
+        <div class="border-box border border-4"></div>
+        <div class="border-box border border-5"></div>
+    </div>
+
+
+
+
+    <h2>29.Display</h2>
+    <div class="my-3 d-none p-2 text-bg-primary">d-none</div>
+    <div class="my-3 d-none p-2 text-bg-dark">d-none</div>
+
+    <div class="my-3 d-inline p-2 text-bg-primary">d-inline</div>
+    <div class="my-3 d-inline p-2 text-bg-dark">d-inline</div>
+
+    <div class="my-3 d-block p-2 text-bg-primary">d-block</div>
+    <div class="my-3 d-block p-2 text-bg-dark">d-block</div>
+
+    <div class="my-3 d-inline-block p-2 text-bg-primary">d-inline-block</div>
+    <div class="my-3 d-inline-block p-2 text-bg-dark">d-inlineblock</div>
+    <!--There are some other like grid,inline-grid,table,table-cell,table-row,flex,inline-flex-->
+
+
+
+
+    <h2>30.Float</h2>
+    <div class="float-sm-start">Float start on viewports sized SM (small) or wider</div><br>
+    <div class="float-md-start">Float start on viewports sized MD (medium) or wider</div><br>
+    <div class="float-lg-start">Float start on viewports sized LG (large) or wider</div><br>
+    <div class="float-xl-start">Float start on viewports sized XL (extra-large) or wider</div><br>
+
+
+
+    <h2>31.Object-fit</h2>
+    <div class="row">
+        <div class="col-2-md m-3" style="width:200px; height:200px;">
+            <img src="https://images.unsplash.com/photo-1684458196035-5a9783e97f6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                class="object-fit-contain border rounded" height="200px" width="200px" alt="img">
+        </div>
+        <div class="col-2-md m-3" style="width:200px; height:200px;">
+            <img src="https://images.unsplash.com/photo-1684458196035-5a9783e97f6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                class="object-fit-cover border rounded" height="200px" width="200px" alt="img">
+        </div>
+        <div class="col-2-md m-3" style="width:200px; height:200px;">
+            <img src="https://images.unsplash.com/photo-1684458196035-5a9783e97f6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                class="object-fit-fill border rounded" height="200px" width="200px" alt="img">
+        </div>
+        <div class="col-2-mdm-3" style="width:200px; height:200px;">
+            <img src="https://images.unsplash.com/photo-1684458196035-5a9783e97f6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                class="object-fit-scale border rounded" height="200px" width="200px" alt="img">
+        </div>
+        <div class="col-2-md m-3" style="width:200px; height:200px;">
+            <img src="https://images.unsplash.com/photo-1684458196035-5a9783e97f6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                class="object-fit-none border rounded" height="200px" width="200px" alt="img">
+        </div>
+    </div>
+
+
+
+
+    <h2>32.Overflow</h2>
+    <div class="row " style="height:200px;">
+        <div class="col bg-secondary m-3 p-2 w-50 h-75 overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Modi veritatis eos quia aut exercitationem nobis corrupti eum, at dignissimos magnam accusamus minima
+            quidem labore hic dolorum cupiditate tenetur id distinctio.</div>
+        <div class="col bg-secondary m-3 p-2 w-50 h-75 overflow-hidden">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Modi veritatis eos quia aut exercitationem nobis corrupti eum, at dignissimos magnam
+            accusamus minima quidem labore hic dolorum cupiditate tenetur id distinctio.</div>
+        <div class="col bg-secondary m-3 p-2 w-50 h-75 overflow-scroll">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Modi veritatis eos quia aut exercitationem nobis corrupti eum, at dignissimos magnam
+            accusamus minima quidem labore hic dolorum cupiditate tenetur id distinctio.</div>
+        <div class="col bg-secondary m-3 p-2 w-50 h-75 overflow-visible">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Modi veritatis eos quia aut exercitationem nobis corrupti eum, at dignissimos magnam
+            accusamus minima quidem labore hic dolorum cupiditate tenetur id distinctio.</div>
+    </div>
+
+
+
+
+    <h2>33.Positions</h2>
+    <div class="position-static">...</div>
+    <div class="position-relative">...</div>
+    <div class="position-absolute">...</div>
+    <div class="position-fixed">...</div>
+    <div class="position-sticky">...</div>
+
+
+
+
+    <h2>34.Shadow</h2>
+    <div class=" shadow-none mb-5 bg-body-tertiary rounded">Shadow</div>
+    <div class=" shadow-sm mb-5 bg-body-tertiary rounded">Shadow</div>
+    <div class=" shadow mb-5 bg-body-tertiary rounded">Shadow</div>
+    <div class=" shadow-lg mb-5 bg-body-tertiary rounded">Shadow</div>
+
+
+
+
+    <h2>35.Sizing</h2>
+    <h3>a.Width</h3>
+    <div class="width">
+        <div class="box w-25 text-bg-danger">Box-1</div>
+        <div class="box w-50 text-bg-warning">Box-2</div>
+        <div class="box w-75 text-bg-danger">Box-3</div>
+        <div class="box w-100 text-bg-warning">Box-4</div>
+        <div class="box w-auto text-bg-danger">Box-5</div>
+    </div>
+
+    <h3>b.Height</h3>
+    <div style="height: 200px;">
+        <div class="box h-25 d-inline-block" style="width: 120px;">Height 25%</div>
+        <div class="box h-50 d-inline-block" style="width: 120px;">Height 50%</div>
+        <div class="box h-75 d-inline-block" style="width: 120px;">Height 75%</div>
+        <div class="box h-100 d-inline-block" style="width: 120px;">Height 100%</div>
+        <div class="box h-auto d-inline-block" style="width: 120px;">Height auto</div>
+    </div>
+
+
+
+
+    <h2>36.Spacing</h2>
+    <h3>Margin</h3>
+    <!--r->right,l->left,t->top,b->bottom,x->x axis (left & right),y->y axis(top & bottom)-->
+    <div class="justify-content-center">
+        <div class="row m-4">
+            <div class="box col-md-5 mx-2">Box-1</div>
+            <div class="box col-md-5 mx-2">Box-2</div>
+        </div>
+        <div class="row m-4">
+            <div class="box col-md-5 mx-2">Box-3</div>
+            <div class="box col-md-5 mx-2">Box-4</div>
+        </div>
+    </div>
+
+    <h3>Padding</h3>
+    <!--r->right,l->left,t->top,b->bottom,x->x axis (left & right),y->y axis(top & bottom)-->
+    <div class="justify-content-center">
+        <div class="row">
+            <div class="box col-md-5 px-5">Box-1</div>
+            <div class="box col-md-5 py-5">Box-2</div>
+        </div>
+        <div class="row">
+            <div class="box col-md-5 pt-5">Box-3</div>
+            <div class="box col-md-5 pb-5">Box-4</div>
+        </div>
+    </div>
+
+
+
+
+    <h2>37.Z-index</h2>
+    <div>
+        <div class="box z-3 position-absolute p-5 rounded-3"><span>z-3</span></div>
+        <div class="box z-2 position-absolute p-5 rounded-3"><span>z-2</span></div>
+        <div class="box z-1 position-absolute p-5 rounded-3"><span>z-1</span></div>
+        <div class="box z-0 position-absolute p-5 rounded-3"><span>z-0</span></div>
+        <div class="box z-n1 position-absolute p-5 rounded-3"><span>z-n1</span></div>
+    </div>
+</body>
+
+</html>
